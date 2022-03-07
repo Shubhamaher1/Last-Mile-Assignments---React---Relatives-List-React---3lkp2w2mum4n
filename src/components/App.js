@@ -7,7 +7,7 @@ function App() {
     <div className="main">
       <ol>
         {data.map((ele, idex) => {
-          return <li key={"relativeListItem" + idex + 1}>{ele}</li>;
+          return <li key={"relativeListItem" + parseInt(idex) + 1}>{ele}</li>;
         })}
       </ol>
     </div>
