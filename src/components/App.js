@@ -5,9 +5,10 @@ function App() {
   const [data, setdata] = useState(list);
   return (
     <div className="main">
-      <ol>
+      <ol key={"relativeList"}>
         {data.map((ele, idex) => {
-          return <li key={"relativeListItem" + parseInt(idex) + 1}>{ele}</li>;
+          let no = idex + 1;
+          return <li key={"relativeListItem" + no}>{ele}</li>;
         })}
       </ol>
     </div>
